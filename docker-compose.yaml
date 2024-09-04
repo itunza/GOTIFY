@@ -3,7 +3,7 @@ services:
   gotify:
     image: gotify/server
     ports:
-      - 'PORT_GOTIFY=${PORT_GOTIFY}:80'
+      - '8997:80'
     environment:
       - 'GOTIFY_DEFAULTUSER_PASS=${GOTIFY_DEFAULTUSER_PASS}'
       - 'TZ=${TZ}'
